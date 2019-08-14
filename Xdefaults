@@ -1,0 +1,11 @@
+! $OpenBSD: dot.Xdefaults,v 1.3 2014/07/10 10:22:59 jasper Exp $
+XTerm*loginShell:true
+Xft.antialias:true
+XTerm*faceName: Monospace
+XTerm*faceSize:18
+! XTerm*background:yellow
+XTerm*foreground:black
+XTerm*on2Clicks: regex [^ \n]+
+XTerm*saveLines:2000
+! use `xfontsel -print` and choose a good font
+! XTerm*Font: -misc-fixed-medium-r-normal-*-20-200-75-*-c-100-iso10646-*
