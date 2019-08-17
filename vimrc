@@ -71,7 +71,8 @@ vnoremap > >gv
 " show relative number, it looks quite good to me ;)
 "set relativenumber
 
-colorscheme desert " looks better then default one
+" colorscheme desert " looks better then default one
+colorscheme newmoon
 " Autocompletion
 set omnifunc=syntaxcomplete#Complete
 " make work with VIM a little bit nicer ;)
