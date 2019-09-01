@@ -2,7 +2,7 @@
 #
 # sh/ksh initialization
 
-PATH=$HOME/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin:/usr/games
+PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/games
 export PATH HOME TERM
 
 alias "git-log"="git log --oneline --graph --decorate --all"
