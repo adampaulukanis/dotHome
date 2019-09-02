@@ -80,6 +80,7 @@ set number
 set cursorline
 hi CursorLineNr cterm=bold ctermfg=white ctermbg=red
 hi CursorLine cterm=none
+hi Visual term=reverse cterm=reverse
 set hlsearch
 
 " get rid of arrows
