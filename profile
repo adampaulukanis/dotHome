@@ -7,6 +7,7 @@ export PATH HOME TERM
 
 alias "git-log"="git log --oneline --graph --decorate --all"
 alias ls="ls -F"
+alias g="git"
 
 export DISPLAY=:0
 export GIT_EDITOR="vim"
