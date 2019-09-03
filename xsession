@@ -1,5 +1,4 @@
 export ENV=$HOME/.profile
-xsetroot -solid green &
-xv -root -quit background.jpg
+xphoon
 xrdb -merge .Xresources
 cwm
