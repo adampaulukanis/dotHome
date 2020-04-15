@@ -108,3 +108,7 @@ let g:echodoc_enable_at_startup = 1
 nnoremap tk :tabnext<CR>
 nnoremap tj :tabprev<CR>
 nnoremap tn :tabnew<CR>
+
+" folding
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
