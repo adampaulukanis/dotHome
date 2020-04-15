@@ -1,6 +1,17 @@
 set nocompatible
 filetype off
 
+" set the runtime path to include Vundle and init
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Shougo/echodoc.vim'
+
+" all of your Plugins must be added before the following line
+call vundle#end()
+
 " TODO:  Is there any way to test whether Vim.app was started from the Finder? 
 if has("gui_running")
   " Get the value of $PATH from a login shell.
@@ -88,3 +99,16 @@ noremap <Up>      <Nop>
 noremap <Down>    <Nop>
 noremap <Left>    <Nop>
 noremap <Right>    <Nop>
+
+" to use echodoc
+set cmdheight=2
+let g:echodoc_enable_at_startup = 1
+
+" tab navigation
+nnoremap tk :tabnext<CR>
+nnoremap tj :tabprev<CR>
+nnoremap tn :tabnew<CR>
+
+" folding
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
