@@ -72,7 +72,8 @@ set laststatus=2
 " 2  same as ":set backspace=indent,eol,start"
 set backspace=2
 " Show line breaks and other chars
-set listchars=eol:$,tab:»·
+set listchars=eol:$,tab:»·,nbsp:_,trail:.
+
 set list
 
 " better indentations: do not loose focus after you indent
