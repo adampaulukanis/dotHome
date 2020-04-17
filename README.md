@@ -12,3 +12,4 @@ my config files
   - `vimrc -> $HOME/.vimrc` vim config file
   - `vim -> cp -r vim/ $HOME/.vim` vim files (contains colorscheme and pl spell dictionary)
 - `xsession -> $HOME/.xsession`
+- `gitconfig`
