@@ -13,3 +13,11 @@ my config files
   - `vim -> cp -r vim/ $HOME/.vim` vim files (contains colorscheme and pl spell dictionary)
 - `xsession -> $HOME/.xsession`
 - `gitconfig`
+
+## ViM Plugins
+
+I am not sure this is nesesery, but you may want to do it in ViM
+
+```
+:PluginInstall
+```
