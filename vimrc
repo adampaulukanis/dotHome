@@ -8,6 +8,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Shougo/echodoc.vim'
+Plugin 'vim-scripts/loremipsum'
 
 " all of your Plugins must be added before the following line
 call vundle#end()
