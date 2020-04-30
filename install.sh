@@ -2,15 +2,8 @@
 
 set -e
 
-for F in *
+for F in ~/dotHOME/*
 do
-  case $F in
-    "install.sh")
-      # I do not need this file
-      ;;
-    *)
-      echo "$F"
-      ln -s "$F" "$HOME/.$F"
-      ;;
-  esac
+  echo "$F"
+  ln -s "$F" "$HOME/.${F##*/}"
 done
