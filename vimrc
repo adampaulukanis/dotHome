@@ -93,6 +93,9 @@ set number
 set cursorline
 hi CursorLineNr cterm=bold ctermfg=white ctermbg=red
 hi CursorLine cterm=none
+hi Pmenu ctermbg=Blue
+hi PmenuSel ctermfg=Black
+hi PmenuSel ctermbg=Grey
 hi Visual term=reverse cterm=reverse
 set hlsearch
 
