@@ -97,6 +97,7 @@ hi Pmenu ctermbg=Blue
 hi PmenuSel ctermfg=Black
 hi PmenuSel ctermbg=Grey
 hi Visual term=reverse cterm=reverse
+hi StatusLine ctermfg=Green
 set hlsearch
 
 " get rid of arrows
