@@ -118,3 +118,6 @@ nnoremap tn :tabnew<CR>
 " folding
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
+
+" Aid in pasting text unmodified from other applications.
+set paste
