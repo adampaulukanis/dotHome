@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Shougo/echodoc.vim'
 Plugin 'vim-scripts/loremipsum'
+Plugin 'vimwiki/vimwiki'
 
 " all of your Plugins must be added before the following line
 call vundle#end()
@@ -121,3 +122,7 @@ autocmd BufWinEnter *.* silent loadview
 
 " Aid in pasting text unmodified from other applications.
 set paste
+
+" vimwiki
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
