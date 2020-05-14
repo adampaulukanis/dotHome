@@ -14,7 +14,7 @@ Plugin 'vimwiki/vimwiki'
 " all of your Plugins must be added before the following line
 call vundle#end()
 
-" TODO:  Is there any way to test whether Vim.app was started from the Finder? 
+" TODO: Is there any way to test whether Vim.app was started from the Finder?
 if has("gui_running")
   " Get the value of $PATH from a login shell.
   " If your shell is not on this list, it may be just because we have not
@@ -47,19 +47,19 @@ set ruler
 "
 " I commented these out because if I use iTerm pressing CMD+/ will show me where
 " the cursor is
-"set cursorline
-"set cursorcolumn
+" set cursorline
+set cursorcolumn
 " other rules I like
 set number
-"set colorcolumn=81,121
-set colorcolumn=121
-"execute "set colorcolumn=" . join(range(81,121), ',')
+set colorcolumn=81,121
+" set colorcolumn=121
+" execute "set colorcolumn=" . join(range(81,121), ',')
 highlight ColorColumn ctermbg=166
 
 "set tw=79       " width of document (used by gd)
 set nowrap      " don't automatically wrap on load
 set fo-=t       " don't automatically wrap text when typing
-set term=screen-256color 
+set term=screen-256color
 
 " if I want 2 lines:
 "let &colorcolumn='81,' . join(range(121,333), ',')
