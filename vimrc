@@ -11,6 +11,8 @@ Plugin 'Shougo/echodoc.vim'
 Plugin 'vim-scripts/loremipsum'
 Plugin 'vimwiki/vimwiki'
 
+" Plugin 'guns/xterm-color-table.vim' " helps with colours in VIM; also you may want to have a look at color_demo.vim
+
 " all of your Plugins must be added before the following line
 call vundle#end()
 
@@ -87,6 +89,7 @@ vnoremap > >gv
 
 " colorscheme desert " looks better then default one
 colorscheme newmoon
+
 " Autocompletion
 set omnifunc=syntaxcomplete#Complete
 " make work with VIM a little bit nicer ;)
@@ -126,3 +129,32 @@ set paste
 " vimwiki
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
+
+" Building a statusline
+
+"  GIT branch icon
+" hi User1 ctermbg=black ctermfg=red guibg=green guifg=red
+hi User1 ctermfg=black ctermbg=red
+hi User2 ctermfg=black  ctermbg=172
+hi User3 ctermfg=black  ctermbg=100
+hi User4 ctermfg=black  ctermbg=154
+hi User5 ctermfg=black  ctermbg=150
+hi User7 ctermfg=white  ctermbg=52
+hi User8 ctermfg=white  ctermbg=81
+hi User9 ctermfg=white  ctermbg=128
+hi User0 ctermfg=white  ctermbg=111
+set statusline=%2* " User2
+set statusline+=%t " tail of the filename
+set statusline+=%3* " User3
+set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
+set statusline+=%{&ff}] "file format
+set statusline+=%h "help file flag
+set statusline+=%m "modified flag
+set statusline+=%r "read only flag
+set statusline+=%y "filetype
+set statusline+=%= "left/right separator
+set statusline+=%c, "cursor column
+set statusline+=%l/%L "cursor line/total lines
+set statusline+=%1* " User1
+set statusline+=\ %P "percent through file
+set statusline+=\  " leave a space
