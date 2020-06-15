@@ -1,14 +1,15 @@
 [user]
-  name = Adam Paulukanis
-  email = adam.paulukanis@gmail.com
+	name = Adam Paulukanis
+	email = adam.paulukanis@gmail.com
 [github]
-  user = adampaulukanis
+	user = adampaulukanis
 [alias]
-  a       = add
-  ca      = commit -a
-  co      = checkout
-  cob     = checkout -b
-  d       = diff
-  s       = status
+	a       = add
+	ca      = commit -a
+	co      = checkout
+	cob     = checkout -b
+	d       = diff
+	s       = status
 	ba			= branch -a
 	bd			= branch -d
+	rv			= remote -v
