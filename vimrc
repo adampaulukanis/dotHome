@@ -158,3 +158,6 @@ set statusline+=%l/%L "cursor line/total lines
 set statusline+=%1* " User1
 set statusline+=\ %P "percent through file
 set statusline+=\  " leave a space
+
+" Make :W same as :w (which is write)
+:command W write
