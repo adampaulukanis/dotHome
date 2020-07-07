@@ -1,5 +1,6 @@
+syntax on
+filetype plugin indent on
 set nocompatible
-filetype off
 
 " set the runtime path to include Vundle and init
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -34,8 +35,6 @@ if has("gui_running")
 "  set term=ansi
 endif
 
-syntax on
-filetype plugin indent on
 set fileencoding=utf-8
 set enc=utf-8
 set spell
