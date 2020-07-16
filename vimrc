@@ -160,3 +160,6 @@ set statusline+=\  " leave a space
 
 " Make :W same as :w (which is write)
 :command W write
+
+" Make comments red
+highlight Comment ctermfg=196
