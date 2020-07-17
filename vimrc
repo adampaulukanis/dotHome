@@ -162,4 +162,5 @@ set statusline+=\  " leave a space
 :command W write
 
 " Make comments red
-highlight Comment ctermfg=196
+hi Comment ctermfg=196 ctermbg=0
+hi SpellBad ctermfg=016 ctermbg=009 cterm=bold
