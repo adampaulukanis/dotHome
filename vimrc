@@ -164,3 +164,6 @@ set statusline+=\  " leave a space
 " Make comments red
 hi Comment ctermfg=196 ctermbg=0
 hi SpellBad ctermfg=016 ctermbg=009 cterm=bold
+
+" Change colour for "nbsp", "space", "tab" and "trail"
+:hi SpecialKey ctermfg=black
