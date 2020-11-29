@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -e
+#set -e
 
 for F in ~/dotHOME/*
 do

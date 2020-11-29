@@ -1,0 +1,26 @@
+let $RTP=split(&runtimepath, ',')[0]
+let $RC="$HOME/.vim/vimrc"
+
+filetype plugin indent on
+syntax on
+set nocompatible
+set backspace=2
+set hidden
+set noswapfile
+set ruler
+set number
+set fileencoding=utf-8
+set enc=utf-8
+set spell
+set spelllang=en,pl
+set laststatus=2
+set path=.,**
+set incsearch
+" set textwidth=78 tabstop=4 shiftwidth=4 softtabstop=4 expandtab autoindent smartindent
+set textwidth=0 tabstop=4 shiftwidth=4 softtabstop=4 expandtab autoindent smartindent
+set list
+set colorcolumn=81
+set nowrap
+
+hi ColorColumn ctermbg=red ctermfg=white
+hi Comment ctermfg=196 ctermbg=0
