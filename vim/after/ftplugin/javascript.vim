@@ -1,1 +1,1 @@
-setlocal path=src/**,test*,bin/**
+setlocal path=src/**,test*,bin/**,**
