@@ -23,11 +23,12 @@ set nowrap
 set hlsearch
 set listchars+=tab:>--
 set relativenumber
+set wildmenu
 
 hi ColorColumn ctermbg=red ctermfg=white
 hi Comment ctermfg=196 ctermbg=0
 
-let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}] " needed vimwiki for this!
 
 map <C-s> :w<CR>
 imap <C-s> <esc>:w<cr>i<right>
