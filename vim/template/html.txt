@@ -5,7 +5,7 @@
         <title>Welcome</title>
         <meta name="description" content="why">
         <meta name="author" content="Adam">
-        <link ref="css/style.css?v=1.0">
+        <link rel="stylesheet" href="css/style.css?v=1.0">
     </head>
     <body>
         <main>
