@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome</title>
+        <meta name="description" content="why">
+        <meta name="author" content="Adam">
+        <linkh ref="css/styles.css?v=1.0">
+    </head>
+    <body>
+        <main>
+            <h1>Hi there</h1>
+        </main>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
