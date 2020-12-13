@@ -24,6 +24,7 @@ set hlsearch
 set listchars+=tab:>--
 set relativenumber
 set wildmenu
+set paste
 
 hi ColorColumn ctermbg=red ctermfg=white
 hi Comment ctermfg=196 ctermbg=0
@@ -42,3 +43,5 @@ inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
 inoremap ,html<cr> <esc>:-1r /Users/adam/.vim/template/html.txt<cr>
+
+colorscheme koehler
