@@ -24,6 +24,7 @@ set hlsearch
 set listchars+=tab:>--
 set relativenumber
 set wildmenu
+set paste
 
 hi ColorColumn ctermbg=red ctermfg=white
 hi Comment ctermfg=196 ctermbg=0
