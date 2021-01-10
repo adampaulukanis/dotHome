@@ -1,5 +1,5 @@
 let $RTP=split(&runtimepath, ',')[0]
-let $RC="$HOME/.vim/vimrc"
+let $RC="$HOME/.vimrc"
 
 filetype plugin indent on
 syntax on
