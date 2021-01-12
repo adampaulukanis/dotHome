@@ -13,3 +13,5 @@
 	ba			= branch -a
 	bd			= branch -d
 	rv			= remote -v
+[core]
+	editor = vim
