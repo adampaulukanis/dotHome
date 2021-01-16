@@ -35,8 +35,8 @@ let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'syntax': 'markdown', 'ex
 map <C-s> :w<CR>
 imap <C-s> <esc>:w<cr>i<right>
 
-inoremap " ""<left>
-inoremap ' ''<left>
+"inoremap " ""<left>
+"inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
