@@ -3,13 +3,8 @@
 My config files.
 ```
 # run install.sh
-$ sh install.sh
 ```
 
 ## ViM
 
-Install Plugins.
-
-```
-:PluginInstall
-```
+- [Exuberant Ctags Patterns for JavaScript](https://github.com/romainl/ctags-patterns-for-javascript)
