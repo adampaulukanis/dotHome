@@ -1,1 +1,1 @@
-inoremap fun<cr> function(){<cr>}<esc>kf(a
+inoremap fun function(){<cr>};<esc>kf(a
