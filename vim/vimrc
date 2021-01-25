@@ -46,3 +46,4 @@ inoremap {;<CR> {<CR>};<ESC>O
 inoremap ,html<cr> <esc>:-1r /Users/adam/.vim/template/html.txt<cr>
 inoremap ,css<cr> <esc>:-1r /Users/adam/.vim/template/css.txt<cr>
 
+let g:slimv_preferred = 'clisp'
