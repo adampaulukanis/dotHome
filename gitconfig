@@ -15,3 +15,5 @@
 	rv			= remote -v
 [core]
 	editor = vim
+[init]
+	defaultBranch = master
