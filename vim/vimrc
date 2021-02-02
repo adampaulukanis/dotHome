@@ -16,7 +16,7 @@ set spelllang=en,pl
 set laststatus=2
 set path=.,**
 set incsearch
-set textwidth=81 tabstop=4 shiftwidth=4 softtabstop=4 expandtab autoindent smartindent
+set textwidth=80 tabstop=4 shiftwidth=4 softtabstop=4 expandtab autoindent smartindent
 set list
 set colorcolumn=81
 set nowrap
@@ -24,7 +24,7 @@ set hlsearch
 set listchars+=tab:>--
 set relativenumber
 set wildmenu
-"set paste
+set paste
 set sidescroll=2
 
 hi ColorColumn ctermbg=red ctermfg=white
@@ -45,3 +45,10 @@ inoremap {;<CR> {<CR>};<ESC>O
 
 inoremap ,html<cr> <esc>:-1r /Users/adam/.vim/template/html.txt<cr>
 inoremap ,css<cr> <esc>:-1r /Users/adam/.vim/template/css.txt<cr>
+
+hi vimwikiheader1 ctermbg=red
+hi vimwikiheader2 ctermbg=green
+hi vimwikiheader3 ctermbg=blue
+hi vimwikiheader4 ctermbg=magenta
+hi vimwikiheader5 ctermbg=cyan
+hi vimwikiheader6 ctermbg=yellow
