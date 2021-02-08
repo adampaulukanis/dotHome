@@ -16,6 +16,7 @@ set spelllang=en,pl
 set laststatus=2
 set path=.,**
 set incsearch
+"set paste
 set textwidth=80 tabstop=4 shiftwidth=4 softtabstop=4 expandtab autoindent smartindent
 set list
 set colorcolumn=81
@@ -24,27 +25,21 @@ set hlsearch
 set listchars+=tab:>--
 set relativenumber
 set wildmenu
-set paste
 set sidescroll=2
 
 hi ColorColumn ctermbg=red ctermfg=white
 hi Comment ctermfg=196 ctermbg=0
 
-let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}] " needed vimwiki for this!
+let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
 map <C-s> :w<CR>
 imap <C-s> <esc>:w<cr>i<right>
 
-"inoremap " ""<left>
-"inoremap ' ''<left>
-"inoremap ( ()<left>
-"inoremap [ []<left>
-"inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
-inoremap ,html<cr> <esc>:-1r /Users/adam/.vim/template/html.txt<cr>
-inoremap ,css<cr> <esc>:-1r /Users/adam/.vim/template/css.txt<cr>
+autocmd BufNewFile  *.html 0r /Users/adam/.vim/templates/index.html
+autocmd BufNewFile  *.css 0r /Users/adam/.vim/templates/style.css
 
 hi vimwikiheader1 ctermbg=red
 hi vimwikiheader2 ctermbg=green
