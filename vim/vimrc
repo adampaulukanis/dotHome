@@ -47,3 +47,5 @@ hi vimwikiheader3 ctermbg=blue
 hi vimwikiheader4 ctermbg=magenta
 hi vimwikiheader5 ctermbg=cyan
 hi vimwikiheader6 ctermbg=yellow
+
+colorscheme koehler
