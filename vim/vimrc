@@ -27,10 +27,15 @@ set relativenumber
 set wildmenu
 set sidescroll=2
 
+" check :h xterm-true-color
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 colorscheme koehler
 
 hi ColorColumn ctermbg=red ctermfg=white
-hi Comment ctermfg=196 ctermbg=0
+" I want my comments to be red
+hi Comment ctermfg=196 ctermbg=0 guifg=red
 
 let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
@@ -43,7 +48,7 @@ inoremap {;<CR> {<CR>};<ESC>O
 autocmd BufNewFile  *.html 0r /Users/adam/.vim/templates/index.html
 autocmd BufNewFile  *.css 0r /Users/adam/.vim/templates/style.css
 
-hi vimwikiheader1 ctermbg=red
+hi vimwikiheader1 ctermbg=white ctermfg=black
 hi vimwikiheader2 ctermbg=green
 hi vimwikiheader3 ctermbg=blue
 hi vimwikiheader4 ctermbg=magenta
