@@ -1,3 +1,4 @@
+" vim: set tw=0 :
 let $RTP=split(&runtimepath, ',')[0]
 let $RC="$HOME/.vimrc"
 
@@ -54,6 +55,14 @@ hi vimwikiheader3 ctermbg=blue
 hi vimwikiheader4 ctermbg=magenta ctermfg=black
 hi vimwikiheader5 ctermbg=cyan ctermfg=black
 hi vimwikiheader6 ctermbg=yellow ctermfg=black
-" vimwiki part
 
+" Load all packages in the 'start' directory
 packloadall
+
+" settings for prettier
+autocmd FileType javascript setlocal formatprg=prettier\ --single-quote\ --trailing-comma\ es5\ --arrow-parens
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+
+" Sometimes syntax highlighting can get out of sync
+autocmd BufEnter *.{js,mjs} :syntax sync fromstart " this can be slow on large files
+autocmd BufLeave *.{js,mjs} :syntax sync clear
