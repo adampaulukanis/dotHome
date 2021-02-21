@@ -62,7 +62,7 @@ packloadall
 
 " settings for prettier
 autocmd FileType javascript setlocal formatprg=prettier\ --single-quote\ --trailing-comma\ es5\ --arrow-parens
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+"autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 " Sometimes syntax highlighting can get out of sync
 autocmd BufEnter *.{js,mjs} :syntax sync fromstart " this can be slow on large files
