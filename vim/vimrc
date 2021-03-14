@@ -18,7 +18,7 @@ set laststatus=2
 set path=.,**
 set incsearch
 "set paste
-set textwidth=80 tabstop=4 shiftwidth=4 softtabstop=4 expandtab autoindent smartindent
+set textwidth=80 tabstop=2 shiftwidth=2 softtabstop=2 expandtab autoindent smartindent
 set list
 set colorcolumn=81
 set nowrap
