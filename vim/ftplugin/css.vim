@@ -1,0 +1,1 @@
+inoremap animation animation: animationName animationDuration animationTimingFunction animationDelay animationIterationCount animationDirection animationFillMode animationPlayState;<esc>0ww
