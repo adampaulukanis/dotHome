@@ -13,7 +13,7 @@ set number
 set fileencoding=utf-8
 set enc=utf-8
 set spell
-set spelllang=en,pl
+set spelllang=en,pl,ru
 set laststatus=2
 set path=.,**
 set incsearch
@@ -44,6 +44,7 @@ imap <C-s> <ESC>mz :w<CR><ESC>`z
 
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
+inoremap {})<CR> {<CR>})<ESC>O
 
 autocmd BufNewFile  *.html 0r /Users/adam/.vim/templates/index.html
 autocmd BufNewFile  *.css 0r /Users/adam/.vim/templates/style.css
