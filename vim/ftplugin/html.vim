@@ -5,3 +5,4 @@ inoremap <h3> <h3></h3><left><esc>cit
 inoremap <h4> <h4></h4><left><esc>cit
 inoremap <h5> <h5></h5><left><esc>cit
 inoremap <h6> <h6></h6><left><esc>cit
+inoremap <li> <li></li><esc>cit
