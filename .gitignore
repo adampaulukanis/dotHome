@@ -3,3 +3,4 @@
 .netrwhist
 pack
 vim/spell/*
+vim/view/*
