@@ -52,7 +52,7 @@ autocmd BufNewFile  *.css 0r /Users/adam/.vim/templates/style.css
 " vimwiki part
 let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 hi vimwikiheader1 ctermbg=white ctermfg=black
-hi vimwikiheader2 ctermbg=red
+hi vimwikiheader2 ctermbg=red ctermfg=black
 hi vimwikiheader3 ctermbg=blue
 hi vimwikiheader4 ctermbg=magenta ctermfg=black
 hi vimwikiheader5 ctermbg=cyan ctermfg=black
