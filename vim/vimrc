@@ -74,3 +74,6 @@ autocmd BufLeave *.{js,mjs} :syntax sync clear
 
 " Make the current window outstanding
 hi statusline guibg=red
+
+" Make matching parens have the same color
+let g:lisp_rainbow=1
