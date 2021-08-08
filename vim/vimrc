@@ -71,3 +71,6 @@ autocmd BufLeave *.{js,mjs} :syntax sync clear
 
 " Edit the file whose name is under or after the cursor or make gf to edit a new file if does not exist already
 :map gf :e <cfile><cr>
+
+" Make the current window outstanding
+hi statusline guibg=red
