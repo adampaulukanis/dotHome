@@ -77,3 +77,5 @@ hi statusline guibg=red
 
 " Make matching parens have the same color
 let g:lisp_rainbow=1
+" My local copy of HyperSpec
+let g:slimv_clhs_user_root="file:///Users/adam/HyperSpec/Body/"
