@@ -16,3 +16,6 @@ export LC_CTYPE="en_US.UTF-8"
 # export PS1="\u@\H:\w$ "
 export PS1='\[\e[1;91m\][\u@\h \w]\$\[\e[0m\] '
 export TERM="screen-256color"
+
+# enable vi mode
+set -o vi
