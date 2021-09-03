@@ -74,3 +74,7 @@ autocmd BufLeave *.{js,mjs} :syntax sync clear
 
 " Make the current window outstanding
 hi statusline guibg=red
+
+" better indentations: do not loose focus after you indent
+vnoremap < <gv
+vnoremap > >gv
