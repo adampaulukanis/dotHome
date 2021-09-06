@@ -46,8 +46,8 @@ inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 inoremap {})<CR> {<CR>})<ESC>O
 
-autocmd BufNewFile  *.html 0r /Users/adam/.vim/templates/index.html
-autocmd BufNewFile  *.css 0r /Users/adam/.vim/templates/style.css
+autocmd BufNewFile  *.html 0r $HOME/.vim/templates/index.html
+autocmd BufNewFile  *.css 0r $HOME/.vim/templates/style.css
 
 " vimwiki part
 let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'syntax': 'markdown','ext': '.md', 'auto_tags': 1}]
