@@ -1,4 +1,5 @@
-export ENV=$HOME/.profile
-xphoon
-xrdb -merge .Xresources
+export ENV=$HOME/.profile &
+xphoon &
+xrdb -merge .Xresources &
+xterm &
 cwm
