@@ -2,7 +2,7 @@
 
 #set -e
 
-for F in ~/dotHOME/*
+for F in ~/dotHome/*
 do
   echo "$F"
   ln -s "$F" "$HOME/.${F##*/}"
