@@ -1,4 +1,4 @@
-# dotHOME
+# dotHome
 
 My config files.
 
