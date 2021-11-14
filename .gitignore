@@ -2,5 +2,5 @@
 .DS_Store
 .netrwhist
 pack
-vim/spell/*
 vim/view/*
+vim/spell/*

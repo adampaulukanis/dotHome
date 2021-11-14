@@ -2,8 +2,16 @@
 
 #set -e
 
-for F in ~/dotHome/*
+OLDPWD=`pwd`
+MYPATH="$HOME/dotHome/"
+WHITELIST="UTF-8-demo.txt Xdefaults Xresources gitconfig profile tmux.conf vimrc vim xsession"
+
+cd $MYPATH
+
+# gf good-file
+for gf in $WHITELIST
 do
-  echo "$F"
-  ln -s "$F" "$HOME/.${F##*/}"
+	ln -s "$MYPATH$gf" "$HOME/.${gf##*/}"
 done
+
+cd $OLDPWD
