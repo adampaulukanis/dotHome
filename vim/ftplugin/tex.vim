@@ -1,0 +1,1 @@
+noremap <space> :make<cr>
