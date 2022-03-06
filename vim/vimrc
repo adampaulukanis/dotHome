@@ -20,7 +20,7 @@ set laststatus=2
 set path=.,**
 set incsearch
 "set paste
-set textwidth=80 tabstop=2 shiftwidth=2 softtabstop=2 expandtab autoindent smartindent
+set textwidth=123 tabstop=2 shiftwidth=2 softtabstop=2 expandtab autoindent smartindent
 set list
 set colorcolumn=81
 set nowrap
@@ -47,28 +47,8 @@ inoremap {})<CR> {<CR>})<ESC>O
 autocmd BufNewFile  *.html 0r $HOME/.vim/templates/index.html
 autocmd BufNewFile  *.css 0r $HOME/.vim/templates/style.css
 
-" vimwiki part
-let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'syntax': 'markdown','ext': '.md', 'auto_tags': 1}]
-hi vimwikiheader1 ctermbg=white ctermfg=black
-hi vimwikiheader2 ctermbg=red ctermfg=black
-hi vimwikiheader3 ctermbg=blue
-hi vimwikiheader4 ctermbg=magenta ctermfg=black
-hi vimwikiheader5 ctermbg=cyan ctermfg=black
-hi vimwikiheader6 ctermbg=yellow ctermfg=black
-
 " Load all packages in the 'start' directory
 packloadall
-
-" Edit the file whose name is under or after the cursor or make gf to edit a new file if does not exist already
-" :map gf :e <cfile><cr>
-:map gf :call MyGOTOFile()<cr>
-
-function! MyGOTOFile() abort
-  let l:file = expand('<cfile>')
-  " execute ':edit
-  echom 'Próbujesz otworzyć ten plik: ' . l:file
-  normal! gF
-endfunction
 
 " Make the current window outstanding
 hi statusline guibg=red
@@ -76,3 +56,5 @@ hi statusline guibg=red
 " better indentations: do not loose focus after you indent
 vnoremap < <gv
 vnoremap > >gv
+
+set backupcopy=yes
