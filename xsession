@@ -1,5 +1,11 @@
-export ENV=$HOME/.profile &
-xphoon &
-xrdb -merge .Xresources &
-xterm &
-cwm
+if [ -x /usr/local/bin/dbus-launch -a -z "${DBUS_SESSION_BUS_ADDRESS}" ]; then
+	echo "Starting dbus-launch"
+        eval `dbus-launch --sh-syntax --exit-with-x11`
+fi
+
+export LANG=en_US.UTF-8
+setxkbmap 'gb(mac)'
+xsetroot -solid darkgreen
+xrdb -merge .Xresources
+
+exec i3
