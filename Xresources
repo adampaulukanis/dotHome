@@ -1,5 +1,8 @@
 XTerm.vt100.translations: #override \n\
   Ctrl <Key> minus: smaller-vt-font() \n\
   Ctrl <Key> plus: larger-vt-font()
-XTerm*faceName: Monospace
-XTerm*faceSize: 13
+XTerm*faceName:     "Hack:style=Regular" ! Are you sure you have this font installed? doas pkg_add hack-fonts
+XTerm*faceSize:     13
+XTerm*loginShell:   true
+XTerm*background:   black
+XTerm*foreground:   white
