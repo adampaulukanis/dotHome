@@ -4,6 +4,7 @@ My config files.
 
 * use Hack fonts (`# doas pkg_add hack-fonts`)
 * use Vim
+* use i3 config file
 
 ```console
 # run install.sh
