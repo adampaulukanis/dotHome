@@ -16,6 +16,7 @@ My config files.
 - vim-prettier
 - vimwiki
 - slimv
+- web-indent (to help indent JavaScript and CSS code in the HTML files)
 
 ## TMUX Plugins
 
