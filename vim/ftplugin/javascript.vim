@@ -5,3 +5,4 @@
 " inoremap fun function name (arguments) {<cr>body<cr>}<esc>2k0wve
 
 nnoremap <space> :silent make %<cr> <bar> :cw<cr> <bar> :redraw!<cr>
+set formatoptions-=cro
