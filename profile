@@ -19,3 +19,6 @@ export TERM="xterm-256color"
 
 # enable vi mode
 set -o vi
+
+# npm run without doas writes there
+export PATH=~/.npm-global/bin:$PATH
