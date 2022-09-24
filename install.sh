@@ -4,7 +4,7 @@ set -e
 
 OLDPWD=`pwd`
 MYPATH="$HOME/dotHome/"
-WHITELIST="UTF-8-demo.txt emoji-test.txt Xdefaults Xresources gitconfig profile tmux.conf vimrc vim xsession"
+WHITELIST="UTF-8-demo.txt emoji-test.txt Xdefaults Xresources gitconfig profile tmux.conf vimrc vim xsession ctags"
 
 cd $MYPATH
 
