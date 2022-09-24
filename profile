@@ -2,11 +2,11 @@
 #
 # sh/ksh initialization
 
-PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/games
+PATH=$HOME/bin:/home/adam/.local/bin:/usr/local/bin:/usr/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/games
 export PATH HOME TERM
 
 alias "git-log"="git log --oneline --graph --decorate --all"
-alias ls="ls -F"
+alias ls="ls -Fo"
 alias g="git status"
 
 export DISPLAY=:0
@@ -22,3 +22,5 @@ set -o vi
 
 # npm run without doas writes there
 export PATH=~/.npm-global/bin:$PATH
+
+randverse # random verse from the Bible
