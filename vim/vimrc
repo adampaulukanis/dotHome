@@ -62,3 +62,7 @@ vnoremap > >gv
 
 set backupcopy=yes
 "set formatoptions-=cro " Stop auto commenting
+
+" LineNo looks better with this?
+hi LineNrAbove ctermbg=white ctermfg=black
+hi LineNrBelow ctermbg=white ctermfg=black
