@@ -6,7 +6,7 @@ fi
 export LANG=en_US.UTF-8
 setxkbmap 'gb(mac)'
 xsetroot -solid darkgreen
-xrdb -merge .Xresources
+xrdb -merge ~/.Xresources
 xrandr --dpi 96
 
 exec i3
