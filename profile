@@ -1,9 +1,4 @@
-# $OpenBSD: dot.profile,v 1.5 2018/02/02 02:29:54 yasuoka Exp $
-#
-# sh/ksh initialization
-
 PATH=$HOME/bin:/home/adam/.local/bin:/usr/local/bin:/usr/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/games
-export PATH HOME TERM
 
 alias "git-log"="git log --oneline --graph --decorate --all"
 alias ls="ls -Fo"
@@ -22,5 +17,13 @@ set -o vi
 
 # npm run without doas writes there
 export PATH=~/.npm-global/bin:$PATH
+#export PATH HOME TERM
 
-randverse # random verse from the Bible
+if [ -x "$(command -v randverse)" ]; then
+    randverse # random verse from the Bible
+else
+    fortune
+fi
+
+LEDGER_FILE=$HOME/finance/2023.journal
+export LEDGER_FILE
