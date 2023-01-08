@@ -1,7 +1,7 @@
 PATH=$HOME/bin:/home/adam/.local/bin:/usr/local/bin:/usr/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/games
 
 alias "git-log"="git log --oneline --graph --decorate --all"
-alias ls="ls -Fo"
+alias ls="echo \"ls -lioF\"; ls -lioF"
 alias g="git status"
 
 export DISPLAY=:0
