@@ -12,18 +12,22 @@ My config files.
 
 ## Vim
 
+Extract plugins/packages into `~/dotHOME/vim/pack/*/start`.
+
 - [Exuberant Ctags Patterns for JavaScript](https://github.com/romainl/ctags-patterns-for-javascript)
 - vim-prettier
 - vimwiki
-- slimv
+- [slimv](https://github.com/kovisoft/slimv)
 - web-indent (to help indent JavaScript and CSS code in the HTML files)
+- [vim-javascript](https://github.com/pangloss/vim-javascript)
+- [vim-jsx-pretty](https://github.com/MaxMEllon/vim-jsx-pretty)
 
 ## TMUX Plugins
 
 1. [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 
 ```console
-# cd # you are now in your $HOME
-# git clone https://github.com/tmux-plugins/tmux-resurrect
-# tmux source-file ~/.tmux.conf # reload TMUX environment, if TMUX already run press ^b R
+$ cd # you are now in your $HOME
+$ git clone https://github.com/tmux-plugins/tmux-resurrect
+$ tmux source-file ~/.tmux.conf # reload TMUX environment, if TMUX already run press ^b R
 ```
