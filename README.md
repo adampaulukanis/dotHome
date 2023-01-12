@@ -12,7 +12,7 @@ My config files.
 
 ## Vim
 
-Extract plugins/packages into `~/dotHOME/vim/pack/*/start`.
+Extract plugins/packages into `~/dotHOME/vim/pack/${VENDOR}start`.
 
 - [Exuberant Ctags Patterns for JavaScript](https://github.com/romainl/ctags-patterns-for-javascript)
 - vim-prettier
