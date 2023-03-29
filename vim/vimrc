@@ -66,3 +66,7 @@ set backupcopy=yes
 " LineNo looks better with this?
 hi LineNrAbove ctermbg=white ctermfg=black
 hi LineNrBelow ctermbg=white ctermfg=black
+
+" Gutentags
+set statusline+=%{gutentags#statusline()}
+let g:gutentags_ctags_executable = 'ectags'
