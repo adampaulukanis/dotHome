@@ -68,5 +68,7 @@ hi LineNrAbove ctermbg=white ctermfg=black
 hi LineNrBelow ctermbg=white ctermfg=black
 
 " Gutentags
-set statusline+=%{gutentags#statusline()}
 let g:gutentags_ctags_executable = 'ectags'
+
+set statusline+=%{gutentags#statusline()}
+set statusline+=\ %<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
