@@ -27,7 +27,7 @@ where VENDOR is some name.
 
 ### Generating help tags
 
-In Vim issuing `:helptags $RTP` should do the trick.
+In Vim issuing `:helptags $RTP` should do the trick or `:helptags ALL`.
 
 ## TMUX Plugins
 
