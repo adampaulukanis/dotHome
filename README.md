@@ -19,11 +19,10 @@ where VENDOR is some name.
 - vim-prettier
 - vimwiki
 - [slimv](https://github.com/kovisoft/slimv)
-- web-indent (to help indent JavaScript and CSS code in the HTML files)
+- [web-indent (to help indent JavaScript and CSS code in the HTML files)](https://www.vim.org/scripts/script.php?script_id=3081)
 - [vim-javascript](https://github.com/pangloss/vim-javascript)
 - [vim-jsx-pretty](https://github.com/MaxMEllon/vim-jsx-pretty)
-- [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags) I may want to copy or perhaps symlink the option file
-  with ~/.ctags option file.
+- [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags) I may want to copy or perhaps symlink the option file with ~/.ctags.
 
 ### Generating help tags
 
