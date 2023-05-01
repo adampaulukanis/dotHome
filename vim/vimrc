@@ -70,5 +70,8 @@ hi LineNrBelow ctermbg=white ctermfg=black
 " Gutentags
 let g:gutentags_ctags_executable = 'ectags'
 
+" settings for slimv
+let g:slimv_strip_ansi=1
+
 set statusline+=%{gutentags#statusline()}
 set statusline+=\ %<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
