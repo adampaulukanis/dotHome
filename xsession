@@ -9,5 +9,5 @@ setxkbmap gb
 xsetroot -solid darkgreen
 xrdb -merge ~/.Xresources
 xrandr --dpi 96
-xidle -delay 1 -nw -program "/usr/X11R6/bin/xlock -mode bat" -timeout 300 &
+xidle -delay 1 -nw -program "/usr/X11R6/bin/xlock -mode bat" -timeout 600 &
 exec i3

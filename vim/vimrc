@@ -68,7 +68,8 @@ hi LineNrAbove ctermbg=white ctermfg=black
 hi LineNrBelow ctermbg=white ctermfg=black
 
 " Gutentags
-let g:gutentags_ctags_executable = 'ectags'
+let g:gutentags_ctags_executable = '/usr/local/bin/ectags'
+let g:gutentags_trace = 0
 
 set statusline+=%{gutentags#statusline()}
 set statusline+=\ %<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
