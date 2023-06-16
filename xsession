@@ -4,10 +4,14 @@ if [ -x /usr/local/bin/dbus-launch -a -z "${DBUS_SESSION_BUS_ADDRESS}" ]; then
 fi
 
 export LANG=en_US.UTF-8
-setxkbmap gb
 #setxkbmap 'gb(mac)'
+#setxkbmap gb
+setxkbmap -layout gb,pl
+setxkbmap -option 'grp:ctrl_alt_toggle'
+
 xsetroot -solid darkgreen
 xrdb -merge ~/.Xresources
 xrandr --dpi 96
 xidle -delay 1 -nw -program "/usr/X11R6/bin/xlock -mode bat" -timeout 600 &
+
 exec i3
