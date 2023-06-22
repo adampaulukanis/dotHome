@@ -6,7 +6,7 @@ fi
 export LANG=en_US.UTF-8
 #setxkbmap 'gb(mac)'
 #setxkbmap gb
-setxkbmap -layout gb,pl
+setxkbmap -layout "gb,pl,gb(mac)"
 setxkbmap -option 'grp:ctrl_alt_toggle'
 
 xsetroot -solid darkgreen
