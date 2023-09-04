@@ -26,7 +26,7 @@ set colorcolumn=81
 set nowrap
 set hlsearch
 set listchars+=tab:>--
-"set relativenumber
+set relativenumber "if vim>=7.4 this option produces hybrid line numbers
 set wildmenu
 set sidescroll=2
 
@@ -35,6 +35,12 @@ set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 colorscheme koehler
+
+" Disable Background Color Erase (BCE) so that color schemes
+" render properly when inside 256-color tmux and GNU screen.
+if &term =~ '256color'
+    set t_ut=
+endif
 
 hi ColorColumn ctermbg=red ctermfg=white
 " I want my comments to be red
@@ -56,12 +62,13 @@ packloadall
 " Make the current window outstanding
 hi statusline guibg=red
 
-" better indentations: do not loose focus after you indent
+" Better indentations: do not loose focus after you indent
 vnoremap < <gv
 vnoremap > >gv
 
 set backupcopy=yes
-"set formatoptions-=cro " Stop auto commenting
+set formatoptions-=cro  " Stop auto commenting
+set formatoptions-=t" This option will insert line breaks to make text wrap at the width set by textwidth
 
 " LineNo looks better with this?
 hi LineNrAbove ctermbg=white ctermfg=black
@@ -70,12 +77,11 @@ hi LineNrBelow ctermbg=white ctermfg=black
 " Gutentags
 let g:gutentags_ctags_executable = '/usr/local/bin/ectags'
 let g:gutentags_trace = 0
-
-" settings for slimv
-let g:slimv_strip_ansi=1
-
 set statusline+=%{gutentags#statusline()}
 set statusline+=\ %<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+
+" Settings for slimv
+let g:slimv_strip_ansi=1
 
 " Start man plugin: can use K or \K which opens man page in a split
 runtime! ftplugin/man.vim
