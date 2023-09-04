@@ -15,4 +15,6 @@ xrandr --dpi 96
 #xrandr --output HDMI-1 --same-as VGA-1
 xidle -delay 1 -nw -program "/usr/X11R6/bin/xlock -mode bat" -timeout 600 &
 
+xlock -mode random -inroot      # Ciekawe ile core dump -ów będę miał.
+
 exec i3
