@@ -23,10 +23,10 @@ set incsearch
 set textwidth=123 tabstop=4 shiftwidth=4 softtabstop=4 expandtab autoindent smartindent
 set list
 set colorcolumn=81
-set nowrap
+set wrap
 set hlsearch
 set listchars+=tab:>--
-set relativenumber "if vim>=7.4 this option produces hybrid line numbers
+"set relativenumber "if vim>=7.4 this option produces hybrid line numbers
 set wildmenu
 set sidescroll=2
 
