@@ -27,3 +27,6 @@ fi
 
 LEDGER_FILE=$HOME/finance/current_year
 export LEDGER_FILE
+
+# I like when man shows me %
+export MANPAGER=more
