@@ -26,7 +26,7 @@ set colorcolumn=81
 set wrap
 set hlsearch
 set listchars+=tab:>--
-"set relativenumber "if vim>=7.4 this option produces hybrid line numbers
+set relativenumber "if vim>=7.4 this option produces hybrid line numbers
 set wildmenu
 set sidescroll=2
 
