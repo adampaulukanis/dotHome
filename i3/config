@@ -11,7 +11,7 @@
 
 #set $mod Mod1
 set $mod Mod4
-#set $alt Mod1
+set $alt Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -47,6 +47,9 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec /usr/X11R6/bin/xterm
+
+# lock my screen when I want to logout
+bindsym $alt+l exec /usr/X11R6/bin/xlock -mode random
 
 # kill focused window
 bindsym $mod+Shift+q kill
