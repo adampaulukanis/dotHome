@@ -18,4 +18,9 @@ xidle -delay 1 -nw -program "/usr/X11R6/bin/xlock -mode bat" -timeout 1200 &
 
 #xlock -mode random -inroot      # Ciekawe ile core dump -ów będę miał.
 
+#xset -dpms
+
+# change blank time to 1 hour
+xset s 3600 3600
+
 exec i3
