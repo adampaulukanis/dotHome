@@ -30,3 +30,10 @@ export LEDGER_FILE
 
 # I like when man shows me %
 export MANPAGER=more
+
+echo
+echo "------------------------------------------------------------------------------------"
+echo "Będziesz tedy miłował Pana, Boga twego, ze wszystkiego serca twego, i ze wszystkiej"
+echo "duszy twojej, i ze wszystkiej siły twojej."
+echo "------------------------------------------------------------------------------------"
+echo
