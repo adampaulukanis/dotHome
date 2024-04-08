@@ -1,11 +1,12 @@
-XTerm*loginShell:true
-Xft.antialias:true
-XTerm*faceName:Monospace
-XTerm*faceSize:9
-! XTerm*background:yellow
-XTerm*foreground:black
+! XTerm*loginShell: true
+Xft.antialias: true
+XTerm*faceName: Monospace
+XTerm*faceSize: 9
+! XTerm*background: yellow
+XTerm*foreground: black
 XTerm*on2Clicks: regex [^ \n]+
-XTerm*saveLines:2000
+XTerm*saveLines: 2000
 ! use `xfontsel -print` and choose a good font
 ! XTerm*Font: -misc-fixed-medium-r-normal-*-20-200-75-*-c-100-iso10646-*
-XTerm*allowMouseOps:true
+XTerm*allowMouseOps: true
+XTerm*termName: xterm-256color
