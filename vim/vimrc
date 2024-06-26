@@ -68,7 +68,7 @@ vnoremap > >gv
 
 set backupcopy=yes
 set formatoptions-=cro  " Stop auto commenting
-set formatoptions-=t" This option will insert line breaks to make text wrap at the width set by textwidth
+set formatoptions-=t " This option will insert line breaks to make text wrap at the width set by textwidth
 
 " LineNo looks better with this?
 hi LineNrAbove ctermbg=white ctermfg=black
