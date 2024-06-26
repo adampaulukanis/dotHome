@@ -15,7 +15,7 @@ set enc=utf-8
 " http://ftp.vim.org/vim/runtime/spell/
 " OR issue :set spell which should download dictionaries automatically
 set spell
-set spelllang=en,pl,ru
+set spelllang=en,pl,ru,fr
 set laststatus=2
 set path=.,**
 set incsearch
