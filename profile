@@ -32,6 +32,9 @@ export LEDGER_FILE
 # I like when man shows me %
 export MANPAGER=more
 
+# set default page for links
+export WWW_HOME='http://google.co.uk/'
+
 echo
 echo "------------------------------------------------------------------------------------"
 echo "Będziesz tedy miłował Pana, Boga twego, ze wszystkiego serca twego, i ze wszystkiej"
