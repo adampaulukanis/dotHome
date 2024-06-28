@@ -27,4 +27,10 @@ xset -dpms
 # change blank time to 1 hour
 xset s 3600 3600
 
+# turn on numlockx
+if [ -x /usr/local/bin/numlockx ]; then
+    echo "NumLock is ON"
+    numlockx
+fi
+
 exec i3
