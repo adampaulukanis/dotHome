@@ -6,4 +6,4 @@ vim/spell/*
 vim/pack/*
 vim/indent
 tags
-tags-*
+tags*
