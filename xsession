@@ -13,14 +13,20 @@ xsetroot -solid darkgreen
 xrdb -merge ~/.Xresources
 
 # first check the output of xrandr or xrandr --listmonitors
-xrandr --dpi 96
-xrandr --output LVDS-1 --right-of HDMI-1
+xrandr --dpi 300
+
+#{ setting for my optiplex
+#xrandr --output DisplayPort-0 --mode 1920x1080
+#}
+
+#{ setting for my macbook
 #xrandr --output HDMI-1 --primary
 #xrandr --output HDMI-1 --same-as VGA-1
 #xrandr --output HDMI-1 --auto
+#}
 xidle -delay 1 -nw -program "/usr/X11R6/bin/xlock -mode bat" -timeout 1200 &
 
-#xlock -mode random -inroot      # Ciekawe ile core dump -ów będę miał.
+#xlock -mode random -inroot      # Ciekawe ile core dump-ów będę miał.
 
 xset -dpms
 
