@@ -1,4 +1,4 @@
-" vim: set tw=0 :
+"vim: set tw=0 :
 let $RTP=split(&runtimepath, ',')[0]
 let $RC="$HOME/.vimrc"
 
@@ -12,8 +12,8 @@ set ruler
 set number
 set fileencoding=utf-8
 set enc=utf-8
-" http://ftp.vim.org/vim/runtime/spell/
-" OR issue :set spell which should download dictionaries automatically
+"http://ftp.vim.org/vim/runtime/spell/
+"OR issue ':set spell' which should download dictionaries automatically
 set spell
 set spelllang=en,pl,ru,fr
 set laststatus=2
@@ -30,24 +30,27 @@ set relativenumber "if vim>=7.4 this option produces hybrid line numbers
 set wildmenu
 set sidescroll=2
 
-" check :h xterm-true-color
+"{check :h xterm-true-color
 set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 colorscheme koehler
+"}
 
-" Disable Background Color Erase (BCE) so that color schemes
-" render properly when inside 256-color tmux and GNU screen.
+"{Disable Background Color Erase (BCE) so that color schemes
+"render properly when inside 256-color tmux and GNU screen.
 if &term =~ '256color'
     set t_ut=
 endif
+"}
 
+"{Change highlight colours
 hi ColorColumn ctermbg=red ctermfg=white
-" I want my comments to be red
+"I want my comments to be red
 hi Comment ctermfg=196 ctermbg=0 guifg=red
-
-" Misspell word while being a comment did not look good
+"Misspell word while being a comment did not look good
 hi SpellBad ctermbg=red ctermfg=yellow
+"}
 
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
@@ -56,32 +59,38 @@ inoremap {})<CR> {<CR>})<ESC>O
 autocmd BufNewFile  *.html 0r $HOME/.vim/templates/index.html
 autocmd BufNewFile  *.css 0r $HOME/.vim/templates/style.css
 
-" Load all packages in the 'start' directory
+"{Load all packages in the 'start' directory
 packloadall
+"}
 
-" Make the current window outstanding
+"{Make the current window outstanding
 hi statusline guibg=red
+"}
 
-" Better indentations: do not loose focus after you indent
+"{Better indentations: do not loose focus after you indent
 vnoremap < <gv
 vnoremap > >gv
+"}
 
 set backupcopy=yes
 set formatoptions-=cro  " Stop auto commenting
 set formatoptions-=t " This option will insert line breaks to make text wrap at the width set by textwidth
 
-" LineNo looks better with this?
+"{LineNo looks better with this?
 hi LineNrAbove ctermbg=white ctermfg=black
 hi LineNrBelow ctermbg=white ctermfg=black
+"}
 
-" Gutentags
-let g:gutentags_ctags_executable = '/usr/local/bin/ectags'
-let g:gutentags_trace = 0
-set statusline+=%{gutentags#statusline()}
-set statusline+=\ %<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+"{Gutentags
+"let g:gutentags_ctags_executable = '/usr/local/bin/ectags'
+"let g:gutentags_trace = 0
+"set statusline+=%{gutentags#statusline()}
+"set statusline+=\ %<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+"}
 
-" Settings for slimv
+"{Settings for slimv
 let g:slimv_strip_ansi=1
+"}
 
-" Start man plugin: can use K or \K which opens man page in a split
+"Start man plugin: can use K or \K which opens man page in a split
 runtime! ftplugin/man.vim
