@@ -15,7 +15,13 @@ do
     ln -s $gf "$HOME/.${gf##*/}"
 done
 
-# NPM
+#{NPM
 mkdir "${HOME}/.npm-global"
+#}
 
-# i3 files
+#{i3 files
+ln -s $HOME/dotHome/i3/i3status.conf $HOME/.i3status.conf
+
+mkdir -p /home/adam/.config/i3/
+ln -s /home/adam/dotHome/i3/config /home/adam/.config/i3/config
+#}
