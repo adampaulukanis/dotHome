@@ -30,6 +30,9 @@ set relativenumber "if vim>=7.4 this option produces hybrid line numbers
 set wildmenu
 set sidescroll=2
 
+set thesaurus+=$RTP/thesaurus/polish.txt
+set thesaurus+=$RTP/thesaurus/english.txt
+
 "{check :h xterm-true-color
 set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
