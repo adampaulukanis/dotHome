@@ -5,5 +5,6 @@ vim/view/*
 vim/spell/*
 vim/pack/*
 vim/indent
+vim/systags
 tags
 tags*

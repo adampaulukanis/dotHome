@@ -97,3 +97,6 @@ let g:slimv_strip_ansi=1
 
 "Start man plugin: can use K or \K which opens man page in a split
 runtime! ftplugin/man.vim
+
+" /usr/include tags for C lang
+set tags+=$RTP/systags
