@@ -22,7 +22,7 @@ set $alt Mod1
 #font pango:DejaVu Sans Mono 13
 
 # try this:
-font pango:Hack:style=Regular 13
+font pango:Hack:style=Regular 12
 #font Hack:style=Regular 12
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
