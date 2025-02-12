@@ -105,6 +105,7 @@ set tags+=$RTP/systags
 " gvim font settings
 if has("gui_running")
     if has("gui_gtk")
-        set guifont=Hack\ Regular\ 10
+        set guifont=Hack\ Regular\ 9
     endif
 endif
+
