@@ -5,7 +5,7 @@ XTerm*faceSize: 4
 ! XTerm*background: yellow
 XTerm*foreground: black
 XTerm*on2Clicks: regex [^ \n]+
-XTerm*saveLines: 20000
+XTerm*saveLines: 40000
 ! use `xfontsel -print` and choose a good font
 ! XTerm*Font: -misc-fixed-medium-r-normal-*-20-200-75-*-c-100-iso10646-*
 XTerm*allowMouseOps: true

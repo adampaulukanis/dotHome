@@ -8,6 +8,7 @@ setlocal isfname+=@-@ " include @ as part of a filename or pathname
 function! JSInclude(fname) abort
   " BUILT-IN NODE MODULES
   " Nie wiem jeszcze jak to ugryźć, więc poddaję się
+  " Wpadłem na pomysł, aby srobić w vimrc: set path+=/path/to/these/modules...
   let idx = index([ 'assert', 'async_hooks',
                  \ 'child_process', 'cluster', 'crypto',
                  \ 'dgram', 'dns', 'domain',

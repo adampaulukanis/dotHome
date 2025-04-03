@@ -15,6 +15,7 @@
     rv      = remote -v
 [core]
     editor = vim
+	quotePath = false
 [init]
     defaultBranch = master
 [credential]
