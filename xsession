@@ -1,3 +1,5 @@
+#!/bin/ksh
+
 if [ -x /usr/local/bin/dbus-launch -a -z "${DBUS_SESSION_BUS_ADDRESS}" ]; then
     echo "Starting dbus-launch"
     eval `dbus-launch --sh-syntax --exit-with-x11`
@@ -46,11 +48,11 @@ fi
 
 #{ set a random wallpaper
 if [ -x /usr/local/bin/feh ] ; then
-    if [ -d ~/wallpapers ] ; then
-        set +A wallpapers ~/wallpapers/*.{png,jpg}
-        N=${#wallpapers[@]}     # number of members in the array
-        ((N=RANDOM%N))          # choose one random wallpaper
-        feh --bg-max ${files[$N]}
+    if [ -d $HOME/wallpapers ] ; then
+        set +A wallpapers $HOME/wallpapers/*.{png,jpg}
+        N=${#wallpapers[@]}      # number of members in the array
+        N=$((RANDOM%N))          # choose one random wallpaper
+        feh --bg-max ${wallpapers[$N]}
     fi
 fi
 #}
