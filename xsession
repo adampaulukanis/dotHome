@@ -37,10 +37,22 @@ xset -dpms
 # change blank time to 1 hour
 xset s 3600 3600
 
-# turn on numlockx
+#{ turn on numlockx
 if [ -x /usr/local/bin/numlockx ]; then
     echo "NumLock is ON"
     numlockx
 fi
+#}
+
+#{ set a random wallpaper
+if [ -x /usr/local/bin/feh ] ; then
+    if [ -d ~/wallpapers ] ; then
+        set +A wallpapers ~/wallpapers/*.{png,jpg}
+        N=${#wallpapers[@]}     # number of members in the array
+        ((N=RANDOM%N))          # choose one random wallpaper
+        feh --bg-max ${files[$N]}
+    fi
+fi
+#}
 
 exec i3
