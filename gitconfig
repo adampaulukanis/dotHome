@@ -16,7 +16,15 @@
 [core]
     editor = vim
 	quotePath = false
+    packedGitLimit = 1g
+    packedGitWindowSize = 1g
 [init]
     defaultBranch = master
 [credential]
 	helper = store
+[http]
+    postbuffer = 1024m
+[pack]
+    deltaCacheSize = 1g
+    packSizeLimit = 1g
+    windowMemory = 1g
