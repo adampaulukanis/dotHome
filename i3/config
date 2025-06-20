@@ -205,4 +205,5 @@ bar {
             urgent_workspace   #ffffff #900000
         }
         padding 0px
+        position top
 }
