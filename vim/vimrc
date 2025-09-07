@@ -126,7 +126,7 @@ set clipboard=unnamed
 "}
 
 "{ My C programs
-"set makeprg=clang\ %
+set makeprg=clang\ %
 map <F4> :w\|make\|cw<cr>
 "}
 
