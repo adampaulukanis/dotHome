@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/ksh
 
 set -e
 
@@ -15,13 +15,15 @@ do
     ln -s $gf "$HOME/.${gf##*/}"
 done
 
-#{NPM
-mkdir "${HOME}/.npm-global"
-#}
+print npm
+mkdir $HOME/.npm-global
+npm -v
 
-#{i3 files
+print i3
 ln -s $HOME/dotHome/i3/i3status.conf $HOME/.i3status.conf
-
 mkdir -p /home/adam/.config/i3/
-ln -s /home/adam/dotHome/i3/config /home/adam/.config/i3/config
-#}
+ln -s $HOME/dotHome/i3/config $HOME/.config/i3/config
+
+print vim
+ln -s $HOME/.vim/vimrc $HOME/.vimrc
+print Run vimtags or something like that in Vim
