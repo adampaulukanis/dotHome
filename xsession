@@ -47,14 +47,7 @@ fi
 #}
 
 #{ set a random wallpaper
-if [ -x /usr/local/bin/feh ] ; then
-    if [ -d $HOME/wallpapers ] ; then
-        set +A wallpapers $HOME/wallpapers/*.{png,jpg}
-        N=${#wallpapers[@]}      # number of members in the array
-        N=$((RANDOM%N))          # choose one random wallpaper
-        feh --bg-max ${wallpapers[$N]}
-    fi
-fi
+./bin/set-random-wallpaper-as-bg.sh
 #}
 
 exec i3
