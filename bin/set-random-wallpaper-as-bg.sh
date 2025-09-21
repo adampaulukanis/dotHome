@@ -4,8 +4,8 @@ if [ -f /tmp/LISTA-BG.txt ] ; then
     print   lista exists
 else
     print   start find indexing
-    find /mnt/1TB/adam/Wspomnienia/ | egrep ".(png|jpg)" > /tmp/LISTA-BG.txt
-    find $HOME/wallpapers/ | egrep ".(png|jpg)" >> /tmp/LISTA-BG.txt
+    #find /mnt/1TB/adam/Wspomnienia/ | egrep ".(png|jpg)" > /tmp/LISTA-BG.txt
+    find $HOME/wallpapers/ | egrep ".(png|jpg)" > /tmp/LISTA-BG.txt
     print   stop find indexing
 fi
 
