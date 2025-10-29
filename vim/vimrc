@@ -53,7 +53,11 @@ hi ColorColumn ctermbg=red ctermfg=white guibg=red guifg=white
 " I want my comments to be red
 hi Comment ctermfg=196 ctermbg=0 guifg=red guibg=black
 " Misspell word while being a comment did not look good
-hi SpellBad ctermbg=red ctermfg=yellow guibg=red guifg=yellow
+"hi SpellBad ctermbg=red ctermfg=yellow guibg=red guifg=yellow
+hi SpellBad ctermfg=yellow guifg=yellow
+
+" Looks better with it
+set background=light
 "}
 
 inoremap {<CR> {<CR>}<ESC>O
@@ -61,7 +65,8 @@ inoremap {;<CR> {<CR>};<ESC>O
 inoremap {})<CR> {<CR>})<ESC>O
 
 autocmd BufNewFile  *.html 0r $HOME/.vim/templates/index.html
-autocmd BufNewFile  *.css 0r $HOME/.vim/templates/style.css
+autocmd BufNewFile  *.css  0r $HOME/.vim/templates/style.css
+autocmd BufNewFile  *.tex  0r $HOME/.vim/templates/start.tex
 
 "{ Load all packages in the 'start' directory
 packloadall
