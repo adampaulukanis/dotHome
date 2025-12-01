@@ -2,8 +2,6 @@ PATH=$HOME/bin:/home/adam/.local/bin:/usr/local/bin:/usr/local/sbin:/bin:/sbin:/
 
 alias "git-log"="git log --oneline --graph --decorate --all"
 alias ls="echo \"ls -lioF\"; ls -lioF"
-alias g="git status"
-alias nv="nvim-qt"
 
 export DISPLAY=:0
 export GIT_EDITOR="nvim"
