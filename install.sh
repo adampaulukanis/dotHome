@@ -2,28 +2,40 @@
 
 set -e
 
-OLDPWD=`pwd`
-WHITELIST="UTF-8-demo.txt emoji-test.txt Xdefaults Xresources gitconfig profile tmux.conf vimrc vim xsession ctags npmrc"
+# .profile
+if [[ -e $HOME/.profile ]]
+then
+    mv $HOME/.profile $HOME/.profile.old
+fi
+ln -sf $HOME/dotHome/profile $HOME/.profile
 
-kaszana sie dzieje, gdy plik juz istnieje, bo nie jest linkowany. Np. .profile istnieje i co wtedy?
-moze niech robi kopie takiego pliku (w jakims ~/backup folderze) [mv file] i wtedy zadziala?
+# X
+ln -sf $HOME/dotHome/Xdefaults $HOME/.Xdefaults
+ln -sf $HOME/dotHome/Xresources $HOME/.Xresources
+ln -sf $HOME/dotHome/xsession $HOME/.xsession
 
-# gf good-file
-for gf in $WHITELIST
-do
-    #ln -s "$MYPATH$gf" "$HOME/.${gf##*/}"
-    ln -s $gf "$HOME/.${gf##*/}"
-done
-
-print npm
+# npm
 mkdir $HOME/.npm-global
-npm -v
+echo "$HOME/.npm-global" >> $HOME/.npmrc
 
-print i3
-ln -s $HOME/dotHome/i3/i3status.conf $HOME/.i3status.conf
-mkdir -p /home/adam/.config/i3/
-ln -s $HOME/dotHome/i3/config $HOME/.config/i3/config
+# i3
+ln -sf $HOME/dotHome/i3/i3status.conf $HOME/.i3status.conf
+mkdir -p $HOME/.config/i3
+ln -sf $HOME/dotHome/i3/config $HOME/.config/i3/config
 
-print vim
-ln -s $HOME/.vim/vimrc $HOME/.vimrc
-print Run vimtags or something like that in Vim
+# (neo)vim
+ln -sf $HOME/dotHome/vim $HOME/.vim
+ln -sf $HOME/.vim/vimrc $HOME/.vimrc
+mkdir -p $HOME/.config/nvim
+echo "set runtimepath^=~/.vim runtimepath+=~/.vim/after" > $HOME/.config/nvim/init.vim
+echo "let &packpath = &runtimepath" >> $HOME/.config/nvim/init.vim
+echo "source ~/.vimrc" >> $HOME/.config/nvim/init.vim
+
+# tmux
+ln -sf $HOME/dotHome/tmux.conf $HOME/.tmux.conf
+
+# git
+ln -sf $HOME/dotHome/gitconfig $HOME/.gitconfig
+
+# my bin programs
+ln -sf $HOME/dotHome/bin $HOME/bin
