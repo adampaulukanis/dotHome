@@ -27,9 +27,7 @@ ln -sf $HOME/dotHome/i3/config $HOME/.config/i3/config
 ln -sf $HOME/dotHome/vim $HOME/.vim
 ln -sf $HOME/.vim/vimrc $HOME/.vimrc
 mkdir -p $HOME/.config/nvim
-echo "set runtimepath^=~/.vim runtimepath+=~/.vim/after" > $HOME/.config/nvim/init.vim
-echo "let &packpath = &runtimepath" >> $HOME/.config/nvim/init.vim
-echo "source ~/.vimrc" >> $HOME/.config/nvim/init.vim
+ln -sf $HOME/dotHome/nvim/init.vim $HOME/.config/nvim/init.vim
 
 # tmux
 ln -sf $HOME/dotHome/tmux.conf $HOME/.tmux.conf
