@@ -63,10 +63,10 @@ inoremap {})<CR> {<CR>})<ESC>O
 
 augroup TemplatesOnNewFile
     autocmd!
-    autocmd BufNewFile,BufRead  *.html 0r $HOME/.vim/templates/index.html
-    autocmd BufNewFile,BufRead  *.css  0r $HOME/.vim/templates/style.css
-    autocmd BufNewFile,BufRead  *.tex  0r $HOME/.vim/templates/start.tex
-    autocmd BufNewFile,BufRead  *.c    0r $HOME/.vim/templates/main.c
+    autocmd BufNewFile  *.html 0r $HOME/.vim/templates/index.html
+    autocmd BufNewFile  *.css  0r $HOME/.vim/templates/style.css
+    autocmd BufNewFile  *.tex  0r $HOME/.vim/templates/start.tex
+    autocmd BufNewFile  *.c    0r $HOME/.vim/templates/main.c
 augroup END
 
 "{ Load all packages in the 'start' directory
