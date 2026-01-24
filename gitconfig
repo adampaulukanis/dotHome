@@ -9,7 +9,7 @@
     co      = checkout
     cob     = checkout -b
     d       = diff
-    s       = status
+    s       = status --ignored
     ba      = branch -a
     bd      = branch -d
     rv      = remote -v
