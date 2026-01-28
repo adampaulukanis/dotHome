@@ -65,3 +65,11 @@ echo " If it is not right, do not do it."
 echo " If it is not true, do not say it."
 echo "-------------------------------------"
 echo
+
+# xwd in base, convert comes in as dependency
+alias scrn='sleep 2; xwd -root | convert xwd:- /tmp/screenshot-$(date +"%Y%m%d%H%M%S").jpg'
+# bc made useable
+alias bc='bc -l'
+
+# run calendar
+calendar
