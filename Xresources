@@ -6,7 +6,7 @@ XTerm*faceSize:     14
 XTerm*loginShell:   true
 XTerm*background:   black
 XTerm*foreground:   white
-XTerm*cursorColor:  gold
+XTerm*cursorColor:  green
 XTerm*cursorBlink:  true
 XTerm*termName:     xterm-256color
 XTerm*saveLines:    40000
