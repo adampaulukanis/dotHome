@@ -1,15 +1,16 @@
 #!/bin/ksh
 
 PROCESSPATH=$1
+DELAY=5
 
 print The slideshow is paused now, press 'h' to unpause
 print
 print
-sleep 3
+print hello ${PROCESSPATH}, $DELAY seconds delay
+sleep $DELAY
 
-print hello ${PROCESSPATH}
 feh --draw-exif \
     --draw-filename \
     --fullscreen \
-    --slideshow-delay -5 \
+    --slideshow-delay -$DELAY \
     ${PROCESSPATH}
