@@ -1,8 +1,16 @@
 PATH=$HOME/bin:/home/adam/.local/bin:/usr/local/bin:/usr/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/games
 
+# {{{ useful aliases
 alias "git-log"="git log --oneline --graph --decorate --all"
 alias ls="echo \"ls -lioF\"; ls -lioF"
 
+# xwd in base, convert comes in as dependency
+alias scrn='sleep 2; xwd -root | convert xwd:- /tmp/screenshot-$(date +"%Y%m%d%H%M%S").jpg'
+# bc made useable
+alias bc='bc -l'
+# }}}
+
+# {{{ exports
 export DISPLAY=:0
 export GIT_EDITOR="nvim"
 export EDITOR="nvim"
@@ -33,7 +41,9 @@ export MANPAGER=more
 
 # set default page for links
 export WWW_HOME='http://google.co.uk/'
+# }}}
 
+# {{{ now display something useful when I log in
 echo
 echo "---------------------------------------------------------------------------------------"
 echo " Będziesz tedy miłował Pana, Boga twego, ze wszystkiego serca twego, i ze wszystkiej"
@@ -66,10 +76,6 @@ echo " If it is not true, do not say it."
 echo "-------------------------------------"
 echo
 
-# xwd in base, convert comes in as dependency
-alias scrn='sleep 2; xwd -root | convert xwd:- /tmp/screenshot-$(date +"%Y%m%d%H%M%S").jpg'
-# bc made useable
-alias bc='bc -l'
-
 # run calendar
 calendar
+# }}}
