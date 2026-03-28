@@ -1,10 +1,11 @@
 *.swp
 .DS_Store
 .netrwhist
-vim/view/*
-vim/spell/*
-vim/pack/*
-vim/indent
-vim/systags
+bin/yt-dlp
 tags
 tags*
+vim/indent
+vim/pack/*
+vim/spell/*
+vim/systags
+vim/view/*
