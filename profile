@@ -3,7 +3,7 @@ PATH=$HOME/bin:/home/adam/.local/bin:/usr/local/bin:/usr/local/sbin:/bin:/sbin:/
 # {{{ useful aliases
 alias "git-log"="git log --oneline --graph --decorate --all"
 alias ls="echo \"ls -lioF\"; ls -lioF"
-
+alias nv="nvim-qt"
 # xwd in base, convert comes in as dependency
 alias scrn='sleep 2; xwd -root | convert xwd:- /tmp/screenshot-$(date +"%Y%m%d%H%M%S").jpg'
 # bc made useable
