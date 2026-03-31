@@ -16,15 +16,3 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
-
-augroup filetype_html " {{{
-    autocmd!
-    autocmd FileType html nnoremap <buffer> <localleader>f Vatzf
-augroup END
-" }}}
-
-augroup filetype_C " {{{
-    autocmd!
-    autocmd FileType c set makeprg=make\ %<
-augroup END
-" }}}

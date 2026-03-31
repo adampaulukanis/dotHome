@@ -131,11 +131,6 @@ set clipboard=unnamed
 "spl ~/Learning/plan.txt
 "}}}
 
-"{{{ My C programs
-set makeprg=clang\ %
-map <F4> :w\|make\|cw<cr>
-"}}}
-
 "{{{ vimtex
 let g:tex_flavor='latex'
 let g:vimtex_view_method='mupdf'
@@ -149,3 +144,15 @@ command W w
 command Wq wq
 command WQ wq
 "}}}
+
+augroup filetype_html " {{{
+    autocmd!
+    autocmd FileType html nnoremap <buffer> <localleader>f Vatzf
+augroup END
+" }}}
+
+augroup filetype_C " {{{
+    autocmd!
+    autocmd FileType c set makeprg=make\ %<
+augroup END
+" }}}
