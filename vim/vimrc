@@ -153,6 +153,11 @@ augroup END
 
 augroup filetype_C " {{{
     autocmd!
-    autocmd FileType c set makeprg=make\ %<
+    autocmd FileType c setlocal makeprg=make\ %<
+    autocmd FileType c setlocal complete+=i
+    autocmd FileType c setlocal omnifunc=ccomplete#Complete
+    autocmd FileType c setlocal path+=/usr/include
 augroup END
 " }}}
+
+set mouse=a
