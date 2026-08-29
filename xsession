@@ -11,7 +11,7 @@ export LANG=en_US.UTF-8
 #setxkbmap gb
 #setxkbmap -layout "gb,pl,gb(mac)"
 setxkbmap -layout "gb,pl,ru"
-setxkbmap -option 'grp:ctrl_alt_toggle'
+setxkbmap -option 'grp:ctrl_alt_toggle' # grp:lalt_lshift_toggle
 #}
 
 xsetroot -solid darkgreen

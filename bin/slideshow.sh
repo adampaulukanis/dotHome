@@ -1,7 +1,7 @@
 #!/bin/ksh
 
 PROCESSPATH=$1
-DELAY=5
+DELAY=10
 
 print The slideshow is paused now, press 'h' to unpause
 print

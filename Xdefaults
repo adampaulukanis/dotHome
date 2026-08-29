@@ -1,7 +1,7 @@
 ! XTerm*loginShell: true
 Xft.antialias: true
 XTerm*faceName: Monospace
-XTerm*faceSize: 4
+XTerm*faceSize: 40
 ! XTerm*background: yellow
 XTerm*foreground: black
 XTerm*on2Clicks: regex [^ \n]+

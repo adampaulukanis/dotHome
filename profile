@@ -46,11 +46,6 @@ export WWW_HOME='http://google.co.uk/'
 # {{{ now display something useful when I log in
 echo
 echo "---------------------------------------------------------------------------------------"
-echo " Będziesz tedy miłował Pana, Boga twego, ze wszystkiego serca twego, i ze wszystkiej"
-echo " duszy twojej, i ze wszystkiej siły twojej."
-echo "---------------------------------------------------------------------------------------"
-echo
-echo "---------------------------------------------------------------------------------------"
 echo " A Jezus mu rzekł: Będziesz miłował Pana, Boga twego, ze wszystkiego serca twego,"
 echo " i ze wszystkiej duszy twojej i ze wszystkiej myśli twojej."
 echo " To jest pierwsze i największe przykazanie."
